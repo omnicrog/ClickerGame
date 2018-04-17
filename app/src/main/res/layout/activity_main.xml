@@ -5,17 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/splash_background"
-    tools:context=".MainActivity"
-    tools:layout_editor_absoluteY="89dp">
+    tools:context=".MainActivity">
     <!--
         ca-app-pub-3940256099942544~3347511713 is a test number for admob
     -->
 
     <LinearLayout
+        android:id="@+id/myMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -28,7 +29,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/orbitron_black"
             android:lineSpacingExtra="8sp"
-            android:text="Clicker Game!"
+            android:text="@string/clicker_game"
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="@color/awesome_colour"
@@ -60,7 +61,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="fill_horizontal|center"
                     android:onClick="goToActivity"
-                    android:text="New Game "
+                    android:text="@string/new_game"
                     android:textAlignment="center"
                     android:visibility="visible"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -78,7 +79,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="fill_horizontal|center"
-                    android:text="Continue"
+                    android:text="@string/_continue"
                     android:textAlignment="center"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -95,7 +96,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="fill_horizontal|center"
-                    android:text="Settings"
+                    android:text="@string/settings"
                     android:textAlignment="center"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -111,15 +112,27 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="fill_horizontal|center"
-                    android:text="Exit"
+                    android:onClick="exit_game"
+                    android:text="@string/exit"
                     android:textAlignment="center"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="parent"
-                    android:onClick="exit_game"/>
+                    app:layout_constraintStart_toStartOf="parent" />
 
             </android.support.constraint.ConstraintLayout>
         </LinearLayout>
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/image"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_round" />
 
 </android.support.constraint.ConstraintLayout>

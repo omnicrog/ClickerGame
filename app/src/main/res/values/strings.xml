@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ClickerGame</string>
+    <string name="exit">Exit</string>
+    <string name="settings">Settings</string>
+    <string name="_continue">Continue</string>
+    <string name="new_game">New Game</string>
+    <string name="image">image</string>
+    <string name="clicker_game">Clicker Game!</string>
 </resources>
