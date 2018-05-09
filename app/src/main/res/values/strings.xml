@@ -1,9 +1,13 @@
 <resources>
-    <string name="app_name">ClickerGame</string>
+    <string name="app_name">Clicker Game</string>
     <string name="exit">Exit</string>
     <string name="settings">Settings</string>
     <string name="_continue">Continue</string>
     <string name="new_game">New Game</string>
     <string name="image">image</string>
     <string name="clicker_game">Clicker Game!</string>
+
+    <string name="title_activity_loading">LoadingActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
